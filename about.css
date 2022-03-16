@@ -1,0 +1,93 @@
+body {  
+  font-family: 'Open Sans', sans-serif;  
+  margin: 0;  
+  background-color: aliceblue;
+ }  
+ a {  
+  text-decoration: none;  
+  color: #000;  
+ }  
+ a:hover{  
+   color: rgb(179, 179, 179);  
+ }  
+ .site-header {   
+ /* border-bottom: 1px solid rgb(12, 11, 11);  */
+  padding: 0.4em;  
+  display: flex;  
+  justify-content: space-between;  
+
+ }  
+ .site-identity h1 {  
+  font-size: 1.5em;  
+  margin: .6em 0;  
+  display: inline-block; 
+  font-family: papyrus; 
+ }  
+ .site-navigation ul,   
+ .site-navigation li {  
+  margin: 0;   
+  padding: 0;  
+ }  
+ .site-navigation li {  
+  display: inline-block;  
+  margin: 1.4em 1em 1em 1em;  
+ }  
+
+   h2 {
+    position: relative;
+    font-style:oblique;
+    font-size: 3vw;
+    color:black;
+    -webkit-text-stroke: 0.3vw black;
+    text-transform: uppercase;
+    margin-left: 5%;
+   }
+
+   h2::before {
+       content: attr(data-text);
+       position: absolute;
+       top: 0;
+       left: 0;
+       height: 100%;
+       width: 0;
+       color: rgb(33, 90, 177);
+       -webkit-text-stroke: 0vw rgb(33, 90, 177);
+       border-right: 2px solid bisque;
+       overflow: hidden;
+       animation: animate 6s linear infinite;
+     }
+
+    @keyframes animate
+    {
+        0%, 10%, 100%
+        {
+            width: 0;
+        }
+        70%, 90%
+        {
+            width: 100%;
+        }
+    }
+
+     .text {
+      align-items: center;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 7%;
+      padding: 30px;
+
+     }
+    p1 {
+      text-align: center;
+      font-size: 25px;
+      font-family: papyrus;
+      line-height: 50px;
+      word-spacing: 8.5px;
+  
+    }
+
+
+  
+    
+   
+       
