@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="skilss.css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<header class="site-header">  
+    <div class="site-identity">  
+     <h1><a target="blank" href="#"></a></h1>  
+    </div>   
+    <nav class="site-navigation">  
+     <ul class="nav">  
+      <li><a href="index.html">Home</a></li>   
+      <li><a href="about.html">About</a></li>   
+      <li><a href="Skillss.html">Skills</a></li>  
+      <li><a href="work.html">Project</a></li> 
+      <li><a href="contact.html">Contact</a></li>  
+     </ul>  
+    </nav>  
+   </header>  
+   
+   
+<body>
+
+
+    <div class="skills">
+
+        <div class="section-title text-center">
+            <h1>Skills</h1>
+        </div>
+    
+        <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="90"></div>
+            </div>
+        </div>
+    
+        <div class="skill">
+            <div class="skill-name">CSS</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="85"></div>
+            </div>
+        </div>
+    
+    
+        <div class="skill">
+            <div class="skill-name">Javascript</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="80"></div>
+            </div>
+        </div>
+    
+        <div class="skill">
+            <div class="skill-name">Bootstrap</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="65"></div>
+            </div>
+        </div>
+    
+        <div class="skill">
+            <div class="skill-name">jQuery</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="65"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">React</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="50"></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Node.js</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="30"></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">SQL</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="30"></div>
+                    </div>
+                <div class="skill">
+                    <div class="skill-name">Json</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="20"></div>
+                    </div>
+        </div>
+
+
+
+       
+
+
+
+<script>
+
+$('.skill-per').each(function () {
+            var $this = $(this);
+            var per = $this.attr('per');
+            $this.css("width", per + '%');
+            $({ animatedValue: 0 }).animate({ animatedValue: per }, {
+                duration: 1000,
+                step: function () {
+                    $this.attr('per', Math.floor(this.animatedValue) + '%');
+
+                },
+                complete: function () {
+                    $this.attr('per', Math.floor(this.animatedValue) + '%');
+
+                }
+
+            });
+        });
+  
+
+
+
+</script>
+</body>
+</html>

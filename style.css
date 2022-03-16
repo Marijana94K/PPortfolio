@@ -1,0 +1,112 @@
+body {  
+  font-family: 'Open Sans', sans-serif;  
+  margin:0;  
+  background-color: black;
+  
+ }  
+ a {  
+  text-decoration: none;  
+  color: aliceblue;  
+ }  
+ a:hover{  
+   color: rgb(179, 179, 179);  
+ } 
+ .site-header {   
+ /* border-bottom: 1px solid rgb(12, 11, 11);  */
+  padding: 0.4em;  
+  display: flex;  
+  justify-content: space-between;  
+
+ }  
+ .site-identity h1 {  
+  font-size: 1.5em;  
+  margin: .6em 0;  
+  display: inline-block; 
+  font-family: papyrus; 
+ }  
+ .site-navigation ul,   
+ .site-navigation li {  
+  margin: 0;   
+  padding: 0;  
+ }  
+ .site-navigation li {  
+  display: inline-block;  
+  margin: 1.4em 1em 1em 1em;  
+ }  
+
+
+
+ img {
+   display: block;
+   margin-left: 60%;
+   margin-top: 9%;
+  /* margin-bottom: 100%;*/
+   height: 450px;
+ }
+
+ .container{
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+.container span{
+  text-transform: uppercase;
+  display: block;
+}
+.text1{
+  color: aliceblue;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  position: relative;
+  animation: text 3s 1;
+  font-family: papyrus;
+}
+.text2{
+  font-size: 20px;
+  color: aliceblue;
+  margin-left: 15%;
+  animation: text 5s 1;
+}
+
+@keyframes text {
+  0%{
+    color: black;
+    margin-bottom: -40px;
+  }
+  30%{
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85%{
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+
+
+.button {
+  background-color: aliceblue;   
+  font-size: 16px;  
+  font-family: serif;  
+  border: none;  
+  border-radius: 15px;  
+  color: black;  
+  padding: 15px 35px;  
+  text-align: center;  
+  text-decoration: none;  
+  display: inline-block; 
+  position: absolute;
+  margin-top: 30%;
+  margin-left: 20%;
+}
+
+.button:hover {
+  background-color: blue;
+  cursor: crosshair;
+}
